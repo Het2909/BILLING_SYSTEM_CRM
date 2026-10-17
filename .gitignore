@@ -1,0 +1,32 @@
+
+# React
+front/node_modules/
+front/build/
+front/dist/
+front/.env
+front/.env.local
+front/.env.production.local
+
+# Python / Django
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+back/.env
+back/db.sqlite3
+back/media/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
