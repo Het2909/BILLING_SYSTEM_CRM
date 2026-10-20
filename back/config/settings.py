@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'purchases',
     'suppliers',
     'django_filters',
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -167,9 +169,12 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [ 
-    origin.strip()
-    for origin in os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",")
-    if origin.strip()
+    # origin.strip()
+    # for origin in os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",")
+    # if origin.strip()
+
+    "https://billing-system-crm-ten.vercel.app/login",
+
     ]
 
 AUTH_USER_MODEL = 'accounts.User'
