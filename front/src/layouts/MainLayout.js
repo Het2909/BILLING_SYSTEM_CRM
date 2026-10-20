@@ -27,11 +27,3 @@ function MainLayout() {
 }
 
 export default MainLayout;
-
-
-const styles = {
-
-  // card: "bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition",
-  // title: {"border" : "5px, solid, black"},
-  // value: "text-3xl font-bold text-gray-800",
-};
