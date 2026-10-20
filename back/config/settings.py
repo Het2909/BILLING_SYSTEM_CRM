@@ -106,13 +106,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # }
 
 DATABASES = {
-
-    "default": dj_database_url.config(
-        default="",
-        conn_max_age=60,
-        conn_health_checks=True,
-        ssl_require=not DEBUG,)
-
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'),
+        conn_max_age=600,
+        conn_health_checks_enabled=True,
+    )
+}
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql',
     #     'NAME': 'grocery_db',
@@ -121,7 +120,6 @@ DATABASES = {
     #     'HOST': 'localhost',
     #     'PORT': '5432',
     # }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
