@@ -24,16 +24,6 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-local-only-key")
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
-
-# # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-)wtb!&%vu04uzeezs$(zk5t!=xqc9$@eiar-%p#g-yltr8)y=^'
-
-# # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-
 ALLOWED_HOSTS = [
      host.strip()
     for host in os.environ.get(
