@@ -5,4 +5,4 @@ pip install -r requirements.txt
 
 python manage.py collectstatic --noinput
 python manage.py migrate --noinput
-python create_demo_user.py
+# python create_demo_user.py
