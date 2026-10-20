@@ -173,7 +173,7 @@ CORS_ALLOWED_ORIGINS = [
     # for origin in os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",")
     # if origin.strip()
 
-    "https://billing-system-crm-ten.vercel.app/login",
+    "https://billing-system-crm-ten.vercel.app",
 
     ]
 
